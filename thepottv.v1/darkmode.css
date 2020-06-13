@@ -1,0 +1,28 @@
+.darkmodebody{
+    background-color: rgb(80, 80, 82);
+    color: white;
+}
+.allcards{
+    background-color:rgb(46, 46, 46);
+    color: white;
+   
+    
+}
+.lineafter{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#darkmodebody{
+    background-color: rgb(80, 80, 82);
+    color: white;
+}
+#allcards{
+    background-color:rgb(46, 46, 46);
+    color: white;
+   
+    
+}
+#lineafter{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}

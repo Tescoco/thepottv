@@ -1,0 +1,924 @@
+#logo{
+  color: whitesmoke;
+  top: 10px;
+  position: absolute;
+    background-color:inherit;
+    padding: 0px 1000% 100% 100%;
+    padding: inherit;
+}
+header{
+  position: fixed;
+background-color:rgb(0, 0, 0);
+  z-index: 1;
+  top: 0px;
+  height: 67px;
+  width:100%;
+
+ 
+  
+}
+header{
+      position: fixed;
+   background-color:rgb(80, 80, 82);
+      z-index: 1;
+      top: 0px;
+      height: 67px;
+      width:100%
+  
+     
+      
+  }
+  .hrline{
+      position: absolute;
+      height: 3px;
+      width:100%;
+      top: 66px;
+     z-index: 1;
+      position: fixed;
+      background-color:#ffcc00;
+  }
+  .hrlinedown{
+      position: absolute;
+      height: 3px;
+      width:100%;
+      top: 91.6vh;
+     z-index: 1;
+      position: fixed;
+      background-color:#ffcc00;
+  }
+ 
+  #content{
+     
+      position: relative;
+      height: 70%;
+      margin-bottom:63px ;
+      
+  }
+  
+  footer{
+      position: fixed;
+      top: 92%;
+      background-color:rgb(80, 80, 82);
+      width: 150%;
+      height: 8%;
+      
+  }
+  body {
+      margin: 1;
+      font-family: 'Lato', sans-serif;
+      background-color: #ffcc00;
+     
+
+  }
+  
+  .overlay {
+     height: 82vh;
+     width: 0%;
+     position: fixed;
+     z-index: 1;
+     top: 8%;
+      right: 0%;
+     background-color:black;
+     overflow-y: hidden;
+     transition: 0.8s;
+  }
+  
+  .overlay-content {
+      position: fixed;
+      top: 6%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+  
+  }
+  
+  .overlay a {
+      padding: 9px;
+      text-decoration: none;
+      font-size: 26px;
+      color: #ffffff;
+      display: block;
+      transition: 0.1s;
+  
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+  }
+  .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+  }
+  
+  @media
+   screen and (max-height: 450px){
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  .containernav {
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  .bar1{
+      width: 35px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px 0;
+      transition: 0.6s;
+      color: rgb(255, 255, 255);
+      left: 55%;
+      position: absolute;
+      top: 15%;
+     
+     
+  }
+  .bar2 {
+      width: 35px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px 0;
+      transition: 0.6s;
+      color: rgb(255, 255, 255);
+      left: 55%;
+      position: absolute;
+      top: 35%;
+     
+  }
+  .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px 0;
+      transition: 0.6s;
+      color: rgb(226, 5, 5);
+      left: 55%;
+      position: absolute;
+      top: 55%;
+     
+     
+  }
+  
+  @media
+   screen and (min-height: 811px){
+      .overlay a {
+          font-size: 20px;
+          padding: 21px;
+      
+      }}
+      .bar1 {
+          top:22%;
+          
+         
+     }
+     .bar2{
+         top: 40%;
+         
+     }
+     .bar3{
+         top: 55%;
+         
+     }
+     .bi-shift{
+      color: rgb(255, 255, 255);
+      z-index: 1;
+      position: absolute;
+      top:15%;
+      width: 10%;
+      height: 70%;
+      left: 5%;
+  }
+   @media
+   screen and (height: 736px){
+      .overlay a {
+          font-size: 24px;
+          padding: 14px;
+      
+      }}
+       .bar1 {
+           top:22%;
+           
+          
+      }
+      .bar2{
+          top: 40%;
+          
+      }
+      .bar3{
+          top: 55%;
+          
+      }
+      @media
+   screen and (height: 568px){
+      .overlay a {
+          font-size: 20px;
+          padding: 9px;
+      
+      }}
+     
+  /* This is to rotate first bar */ 
+  
+  .change .bar1 {
+   -webkit-transform: rotate(-45deg)
+   translate(-9px, 6px) ;
+   transform: rotate(-45deg)
+   translate(-9px, 6px) ;
+  }
+  
+  /* This is to fade out second bar */ 
+  
+  .change .bar2 {opacity: 0;}
+  .change .bar3 {
+    -webkit-transform: rotate(45deg)
+    translate(-8px, -8px) ;
+    transform: rotate(45deg)
+    translate(-8px, -8px) ;
+  }
+  /*snall button up*/
+  .switch::after, .switch::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /*second nav*/
+    .bi-house-door{
+        color: rgb(255, 255, 255);
+        height: 62%;
+        width: 8%;
+        position: absolute;
+        top:20%;
+        right:62%;
+        z-index: 3;
+      
+        
+    }
+    /*here is the controller*/
+    .switch:root {
+      --color-background-off: #4e4e4e;
+      --color-off: #494949;
+      --shadow-off: 0 1.2rem 1.5rem #4d4d4d;  
+    
+      --color-background-on: #000000;
+      --color-on: rgb(0, 0, 0);
+      --shadow-on: 0 1.2rem 1.5rem #000000;  
+    
+      font-size: 62.5%;
+    }
+    
+    html.switch, body.switch {
+      height: 100%;
+    }
+    
+    body.switch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-background-off);
+      overflow: hidden;
+    }
+    
+    .switch {
+      --switch-width: 2.9rem;
+      --switch-height: 1.4rem;
+      width: var(--switch-width);
+      height: var(--switch-height);
+      border-radius: 10rem;
+      box-shadow: var(--shadow-off);
+      position: relative;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      left: 86%;
+      top: 96%;
+    }
+    
+    .switch__button {
+      width: var(--switch-height);
+      height: var(--switch-height);
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      overflow: hidden;
+      background:   #ffcc00;
+      z-index: 3;
+    }
+    
+    .airplane {
+     
+      position: absolute;
+      top: 50%;
+      width: calc(var(--switch-height) / 2);
+      height: calc(var(--switch-height) / 2);
+    }
+    
+    .airplane:not(.-on) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .airplane.-on {
+      background-color:rgb(0, 0, 0);
+      width:100%;
+      height:100%;
+      transform: translateY(-50%);
+      right: 100%;
+    }
+    
+    /* Airport Background */
+    
+    .airport-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background:white;
+      overflow: hidden;
+    }
+    
+    
+    
+    
+    .airport {
+      --light-size: 0.6rem;
+      --line-size: 1.5rem;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      display: flex;
+      flex-direction: column;
+      background: white;
+    }
+    .sky {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: inherit;
+      background: rgb(90, 90, 90);
+      opacity: 0;
+      z-index: 2;
+      overflow: hidden;
+    }
+    
+    
+    
+ 
+section{
+  position: absolute;
+  top: 77px;
+  background-color: salmon;
+  width: 100%;
+ 
+
+}
+
+footer{
+  position: fixed;
+  top: 92%;
+  background-color:rgb(80, 80, 82);
+  width: 150%;
+  height: 8%;
+  
+}
+body {
+  margin: 1;
+  font-family: 'Lato', sans-serif;
+  background-color: #ffcc00;
+}
+
+.overlay {
+ height: 86vh;
+ width: 0%;
+ position: fixed;
+ z-index: 1;
+ top: 6%;
+  right: 0%;
+ background-color:black;
+ overflow-y: hidden;
+ transition: 0.8s;
+}
+
+.overlay-content {
+  position: fixed;
+  top: 6%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.overlay a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #ffffff;
+  display: block;
+  transition: 0.1s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media
+screen and (max-height: 450px){
+.overlay {overflow-y: auto;}
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+}
+.containernav {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1{
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.6s;
+  color: rgb(255, 255, 255);
+  left: 55%;
+  position: absolute;
+  top: 15%;
+ 
+ 
+}
+.bar2 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.6s;
+  color: rgb(255, 255, 255);
+  left: 55%;
+  position: absolute;
+  top: 35%;
+ 
+}
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.6s;
+  color: rgb(226, 5, 5);
+  left: 55%;
+  position: absolute;
+  top: 55%;
+ 
+ 
+}
+
+@media
+screen and (min-height: 811px){
+  .overlay a {
+      font-size: 20px;
+      padding: 21px;
+  
+  }}
+  .bar1 {
+      top:22%;
+      
+     
+ }
+ .bar2{
+     top: 40%;
+     
+ }
+ .bar3{
+     top: 55%;
+     
+ }
+ .bi-shift{
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  position: absolute;
+  top:15%;
+  width: 10%;
+  height: 70%;
+  left: 5%;
+}
+@media
+screen and (height: 736px){
+  .overlay a {
+      font-size: 24px;
+      padding: 14px;
+  
+  }}
+   .bar1 {
+       top:22%;
+       
+      
+  }
+  .bar2{
+      top: 40%;
+      
+  }
+  .bar3{
+      top: 55%;
+      
+  }
+  @media
+screen and (height: 568px){
+  .overlay a {
+      font-size: 20px;
+      padding: 9px;
+  
+  }}
+ 
+/* This is to rotate first bar */ 
+
+.change .bar1 {
+-webkit-transform: rotate(-45deg)
+translate(-9px, 6px) ;
+transform: rotate(-45deg)
+translate(-9px, 6px) ;
+}
+
+/* This is to fade out second bar */ 
+
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+-webkit-transform: rotate(45deg)
+translate(-8px, -8px) ;
+transform: rotate(45deg)
+translate(-8px, -8px) ;
+}
+/*snall button up*/
+.switch::after, .switch::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*second nav*/
+.bi-house-door{
+    color: rgb(255, 255, 255);
+    height: 62%;
+    width: 8%;
+    position: absolute;
+    top:20%;
+    right:62%;
+    z-index: 3;
+  
+    
+}
+/*here is the controller*/
+.switch:root {
+  --color-background-off: #4e4e4e;
+  --color-off: #2b2b2b;
+  --shadow-off: 0 1.2rem 1.5rem #4d4d4d;  
+
+  --color-background-on: #000000;
+  --color-on: rgb(14, 14, 14);
+  --shadow-on: 0 1.2rem 1.5rem #1d1d1d;  
+
+  font-size: 62.5%;
+}
+
+html.switch, body.switch {
+  height: 100%;
+}
+
+body.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-background-off);
+  overflow: hidden;
+}
+
+.switch {
+  --switch-width: 2.9rem;
+  --switch-height: 1.4rem;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: 10rem;
+  box-shadow: var(--shadow-off);
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  left: 86%;
+  top: 96%;
+}
+
+.switch__button {
+  width: var(--switch-height);
+  height: var(--switch-height);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  overflow: hidden;
+  background:  #ffcc00;
+  z-index: 3;
+}
+
+.airplane {
+ 
+  position: absolute;
+  top: 50%;
+  width: calc(var(--switch-height) / 2);
+  height: calc(var(--switch-height) / 2);
+}
+
+.airplane:not(.-on) {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.airplane.-on {
+  background-color:rgb(0, 0, 0);
+  width:100%;
+  height:100%;
+  transform: translateY(-50%);
+  
+  right: 100%;
+}
+
+/* Airport Background */
+
+.airport-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background:white;
+  overflow: hidden;
+}
+
+
+
+
+.airport {
+  --light-size: 0.6rem;
+  --line-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.sky {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  background: rgb(90, 90, 90);
+  opacity: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+/*second content*/
+#descheader{
+  height: 7%;
+   position: absolute;
+  top:10%;
+    font-style:italic;
+   width:100%;
+   color: white;
+  background-color: rgb(187, 255, 0);
+  padding: 0;
+  margin: 0;
+  align-content: flex-end;
+  
+}
+#descheader h6{
+  font-size: 24px;
+}
+tbody td{
+    color: rgba(5, 5, 5, 0.911);
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  
+}
+
+section{
+      position: absolute;
+      top: 17.7%;
+      background-color:#ffcc00;
+      color: white;
+     margin-bottom: 8.2%;
+     width: 100%;
+    
+    
+     
+  
+  } 
+  .empty{
+    background-color:#ffcc00;
+   
+    height: 7%;
+    position: absolute;
+    top: 10.5%;
+    width: 100%;
+  }
+  
+@media
+screen and (min-height: 540px){
+#descheader{
+  height: 8%;
+  top:8.5%;
+}
+.empty{
+height: 10%;
+}
+
+#descheader h6{
+font-size: 18px;
+
+}
+section{
+
+top: 17.1%;
+
+} }
+@media
+screen and (min-height: 800px){
+#descheader{
+  height: 8%;
+  top:6%;
+}
+.empty{
+height: 10%;
+top: 8%;
+}
+#descheader h6{
+font-size: 26px;
+
+}
+section{
+
+top: 14.5%;
+
+
+} }
+@media
+screen and (min-height: 710px){
+#descheader{
+  height: 9%;
+  top:6%;
+}
+.empty{
+top: 2%;
+height:17%;
+}
+#descheader h6{
+font-size: 26px;
+
+}
+section{
+
+top: 15.5%;
+
+
+} }
+
+  
+  @media
+screen and (min-height: 1000px){
+#descheader{
+  height: 8%;
+  top:5%;
+}
+.empty{
+top: 3%;
+height:13%;
+}
+#descheader h6{
+font-size: 40px;
+
+}
+section{
+
+top: 13.4%;
+
+
+} }
+@media
+screen and (min-width: 1000px){
+
+section{
+
+
+margin-bottom: 1.2%;
+
+} }
+  #curtain{
+    
+      z-index: 9;
+      height: 100vh;
+  }
+  
+  .potlogo{
+     
+      z-index: 31;
+      position:fixed;
+     
+     width: 40%;
+    height: 22%;
+    left: 30%;
+   top:38%; 
+   
+      
+  }
+  @media
+screen and (min-width: 320px){
+  .potlogo{
+    width: 40%;
+    height: 22%;
+    left: 30%;
+   top:38%; 
+  }}
+  @media
+screen and (min-width: 1020px){
+  .potlogo{
+      width: 50%;
+      height: 22%;
+      left: 40%;
+     top:28%; 
+  }
+}
+ 
+  @media
+  screen and (min-width: 1000px){
+      .potlogo{
+          width: 20%;
+          height: 28%;
+          left: 40%;
+         top:42%; 
+      }
+}
+#show{
+  display:block;
+}
+#none{
+  display:none;
+}
+.show{
+  display:block;
+}
+.none{
+  display:none;
+}
+
+.mask1{
+  background-color: #ffcc00;
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  top: 8%;
+  z-index: 30;
+
+
+}
+.mask2{
+  background-color: #ffcc00;
+  height: 43%;
+  width: 100%;
+  position: fixed;
+  top: 57%;
+  z-index: 30;
+
+
+}
+.homebtncolor{
+  fill: #ffcc00;
+}
+.rankpagecolor{
+  fill: rgb(255, 255, 255);
+}
+#navbarcolor{
+  background-color: rgb(255, 255, 255);
+}
+#navbarcolor2{
+  background-color: rgb(255, 255, 255);
+}
